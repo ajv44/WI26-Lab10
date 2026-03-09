@@ -2,6 +2,8 @@ from fastapi import FastAPI, Form, Request
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
+fromt contextlib import asynccontextmanager
+import time
 import mysql.connector
 import random
 import os
